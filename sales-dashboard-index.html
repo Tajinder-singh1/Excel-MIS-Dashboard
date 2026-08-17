@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Performance Dashboard | Tajinder Singh</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+        .hero {
+            background: linear-gradient(135deg, #315ea8, #6f8fc9);
+            color: white;
+            padding: 55px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            margin: 0 0 10px;
+            font-size: 42px;
+        }
+        .hero p {
+            margin: 0 auto;
+            max-width: 780px;
+            font-size: 18px;
+            opacity: .95;
+        }
+        .container {
+            width: min(1100px, 92%);
+            margin: 35px auto 60px;
+        }
+        .card {
+            background: white;
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,.07);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #315ea8;
+        }
+        .preview {
+            width: 100%;
+            display: block;
+            border: 1px solid #d9dee7;
+            border-radius: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .metric {
+            background: #f0f4fb;
+            border-radius: 10px;
+            padding: 18px;
+            text-align: center;
+        }
+        .metric strong {
+            display: block;
+            font-size: 15px;
+            color: #315ea8;
+            margin-bottom: 5px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tag {
+            background: #e8eef9;
+            color: #315ea8;
+            padding: 8px 13px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            background: #315ea8;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+        .button:hover { opacity: .9; }
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #6b7280;
+            font-size: 14px;
+        }
+        @media (max-width: 800px) {
+            .hero h1 { font-size: 32px; }
+            .grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 500px) {
+            .grid { grid-template-columns: 1fr; }
+            .card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <h1>Sales Performance Dashboard</h1>
+    <p>
+        An Excel-based sales analytics dashboard designed to monitor overall
+        sales performance, regional performance, salesperson performance,
+        product sales, monthly trends, and key business KPIs.
+    </p>
+</header>
+
+<main class="container">
+
+    <section class="card">
+        <h2>Dashboard Preview</h2>
+        <img class="preview"
+             src="sales-dashboard.png"
+             alt="Sales Performance Dashboard created in Excel">
+    </section>
+
+    <section class="card">
+        <h2>Project Overview</h2>
+        <p>
+            This dashboard transforms raw sales data into a clear management
+            report. It provides a quick overview of sales performance through
+            KPI cards, regional analysis, salesperson performance, product
+            analysis, and monthly sales trends. Interactive Region and Product
+            filters allow users to analyze the dashboard from different views.
+        </p>
+
+        <div class="grid">
+            <div class="metric">
+                <strong>Total Sales</strong>
+                ₹5,36,000
+            </div>
+            <div class="metric">
+                <strong>Total Orders</strong>
+                10
+            </div>
+            <div class="metric">
+                <strong>Average Sales</strong>
+                ₹53,600
+            </div>
+            <div class="metric">
+                <strong>Highest Sale</strong>
+                ₹1,20,000
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Overall sales KPI tracking</li>
+            <li>Region-wise sales analysis</li>
+            <li>Salesperson performance analysis</li>
+            <li>Product-wise sales analysis</li>
+            <li>Monthly sales trend analysis</li>
+            <li>Interactive Region and Product filters</li>
+            <li>Pivot Tables, charts, and dashboard-based MIS reporting</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Tools & Skills</h2>
+        <div class="skills">
+            <span class="tag">Advanced Excel</span>
+            <span class="tag">Pivot Tables</span>
+            <span class="tag">Excel Charts</span>
+            <span class="tag">KPI Reporting</span>
+            <span class="tag">Sales Analysis</span>
+            <span class="tag">Data Visualization</span>
+            <span class="tag">Dashboard Development</span>
+            <span class="tag">MIS Reporting</span>
+            <span class="tag">Interactive Filters</span>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Excel Project File</h2>
+        <p>
+            Download the original Excel dashboard to explore the workbook,
+            Pivot Tables, charts, calculations, and interactive filters.
+        </p>
+        <a class="button" href="Sales%20Dashboard.xlsx" download>
+            Download Excel Dashboard
+        </a>
+    </section>
+
+</main>
+
+<footer>
+    Sales Dashboard · Tajinder Singh · Data Analyst / MIS Analyst Portfolio
+</footer>
+
+</body>
+</html>
